@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function App() {
   const [activeTab, setActiveTab] = useState("group-tours");
-  const [cartCount, setCartCount] = useState(0);
+  const [cartCount] = useState(0);
   const [selectedTour, setSelectedTour] = useState(null);
 
   const tours = [
@@ -960,7 +960,9 @@ function App() {
                     placeholder="Find your next event"
                     className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
-                  <span className="absolute left-3 top-2.5 text-gray-400">🔍</span>
+                  <span className="absolute left-3 top-2.5 text-gray-400">
+                    🔍
+                  </span>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
@@ -968,15 +970,21 @@ function App() {
                   <select className="pl-8 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none">
                     <option>Event Location</option>
                   </select>
-                  <span className="absolute left-2 top-2.5 text-gray-400">📍</span>
+                  <span className="absolute left-2 top-2.5 text-gray-400">
+                    📍
+                  </span>
                 </div>
                 <div className="relative">
                   <select className="pl-8 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none">
                     <option>Event Category</option>
                   </select>
-                  <span className="absolute left-2 top-2.5 text-gray-400">📄</span>
+                  <span className="absolute left-2 top-2.5 text-gray-400">
+                    📄
+                  </span>
                 </div>
-                <button className="px-3 py-2 text-gray-600 hover:text-gray-800">++!</button>
+                <button className="px-3 py-2 text-gray-600 hover:text-gray-800">
+                  ++!
+                </button>
               </div>
               <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
                 Search Now
@@ -1009,33 +1017,39 @@ function App() {
             {/* Left Content - Information Text */}
             <div className="md:col-span-1">
               <p className="text-gray-300 leading-relaxed">
-                Closer to the tour departure date you will receive an email with trip updates. Meanwhile, if you have any questions feel free to E-mail or WhatApp us:
+                Closer to the tour departure date you will receive an email with
+                trip updates. Meanwhile, if you have any questions feel free to
+                E-mail or WhatApp us:
               </p>
             </div>
-            
+
             {/* Middle Content - Contact Details */}
             <div className="md:col-span-1">
               <div className="space-y-2">
                 <p className="text-gray-300">weekiesgeorgia@gmail.com</p>
-                <p className="text-gray-300">+995 599 80 39 35 Karolina (English or Polish)</p>
-                <p className="text-gray-300">+995 577 68 79 65 Natia (English or Georgian)</p>
+                <p className="text-gray-300">
+                  +995 599 80 39 35 Karolina (English or Polish)
+                </p>
+                <p className="text-gray-300">
+                  +995 577 68 79 65 Natia (English or Georgian)
+                </p>
               </div>
             </div>
-            
+
             {/* Right Content - Social Media Icons */}
             <div className="md:col-span-1 flex justify-end space-x-4">
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              <button className="text-white hover:text-gray-300 transition-colors">
                 <span className="text-2xl">📘</span>
-              </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              </button>
+              <button className="text-white hover:text-gray-300 transition-colors">
                 <span className="text-2xl">📷</span>
-              </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              </button>
+              <button className="text-white hover:text-gray-300 transition-colors">
                 <span className="text-2xl">🎵</span>
-              </a>
+              </button>
             </div>
           </div>
-          
+
           {/* Lower Footer Section - Copyright */}
           <div className="border-t border-gray-700 pt-6">
             <div className="text-sm text-gray-400 space-y-1">
